@@ -1,12 +1,12 @@
 import './App.css';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import FormSignup from './components/FormSignUp';
 
 function App() {
   return (
     <>
       <Container component="section" maxWidth="sm">
-        <h1> Formulario Registro </h1>
+        <Typography variant='h3' align='center'>Formulario Registro</Typography>
         <FormSignup/>
       </Container>
     </>

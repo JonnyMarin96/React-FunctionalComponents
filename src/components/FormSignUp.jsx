@@ -1,4 +1,5 @@
-import { Button } from "@mui/material"
+import { Button, Switch, FormGroup, FormControlLabel } from "@mui/material"
+
 import TextField from '@mui/material/TextField';
 
 function FormSignup(){
@@ -10,11 +11,15 @@ function FormSignup(){
 
             <TextField id="email" label="E-mail" variant="outlined" fullWidth={true} margin="normal"/>
 
-            <label> Promociones </label>
-            <input type="checkbox"/>
+            <FormGroup>
+                <FormControlLabel control={
+                    <Switch/>
+                } label="Promociones"/>
 
-            <label> Novedades </label>
-            <input type="checkbox"/>
+            <FormControlLabel control={
+                    <Switch/>
+                } label="Novedades"/>
+            </FormGroup>
 
             <Button variant="contained"> Registrar </Button>
         </form>
