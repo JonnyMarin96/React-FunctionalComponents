@@ -1,16 +1,14 @@
 import { Button } from "@mui/material"
+import TextField from '@mui/material/TextField';
 
 function FormSignup(){
     return (
         <form>
-            <label> Nombre </label>
-            <input type="text"/>
+            <TextField id="name" label="Nombre" variant="outlined" fullWidth={true} margin="normal"/>
 
-            <label> Apellido </label>
-            <input type="text"/>
+            <TextField id="last-name" label="Apellido" variant="outlined" fullWidth={true} margin="normal"/>
 
-            <label> E-mail </label>
-            <input type="email"/>
+            <TextField id="email" label="E-mail" variant="outlined" fullWidth={true} margin="normal"/>
 
             <label> Promociones </label>
             <input type="checkbox"/>
